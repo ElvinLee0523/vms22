@@ -88,7 +88,7 @@
  *             unit: "Apartment A"
  *             hp_num: "+123456789"
  *     responses:
- *       200:W
+ *       200:
  *         description: Successful response.
  *       400:
  *         description: Bad Request. User already exists.
