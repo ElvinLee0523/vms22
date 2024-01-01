@@ -10,7 +10,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const qrCode_c = require('qrcode');
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.env.mongo0bongo  ;
+const uri = "mongodb+srv://ElvinLee:1234567890@elvindata.qte1ayi.mongodb.net/test";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -25,10 +25,10 @@ const client = new MongoClient(uri, {
 client.connect() 
 
 //variables to define which collection used
-const user = client.db("EmeraldVMS").collection("users")
-const visitor = client.db("EmeraldVMS").collection("visitors")
-const visitorLog = client.db("EmeraldVMS").collection("visitor_log")
-const pending = client.db("EmeraldVMS").collection("Pending_users")
+const user = client.db("Visitor_Management_v1").collection("users")
+const visitor = client.db("Visitor_Management_v1").collection("visitors")
+const visitorLog = client.db("Visitor_Management_v1").collection("visitor_log")
+const pending = client.db("Visitor_Management_v1").collection("Pending_users")
 //app.use(express.json())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
