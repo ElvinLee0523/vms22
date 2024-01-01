@@ -1,0 +1,1 @@
+projection: {"_id":0}}

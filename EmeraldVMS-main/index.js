@@ -29,6 +29,8 @@ const user = client.db("Visitor_Management_v1").collection("users")
 const visitor = client.db("Visitor_Management_v1").collection("visitors")
 const visitorLog = client.db("Visitor_Management_v1").collection("visitor_log")
 const pending = client.db("Visitor_Management_v1").collection("Pending_users")
+
+
 //app.use(express.json())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -326,6 +328,7 @@ app.post('/findvisitorlog', verifyToken, async (req, res)=>{
     else if (authorize == "security" || authorize == "admin"){
       const result = await findLog(data) //find logs
       res.status(200).send(result)
+      console.log(result);
     }
   }
   )
@@ -573,7 +576,7 @@ function currentTime(){
 
 //generate token for login authentication
 function generateToken(loginProfile){
-  return jwt.sign(loginProfile, process.env.bigSecret , { expiresIn: '1h' });
+  return jwt.sign(loginProfile, 'key' , { expiresIn: '1h' });
 }
 
 //verify generated tokens
@@ -585,7 +588,7 @@ function verifyToken(req, res, next){
   }
   let header = req.headers.authorization
   let token = header.split(' ')[1] //checking header //process.env.fuckyou
-  jwt.verify(token,process.env.bigSecret,function(err,decoded){
+  jwt.verify(token,'key',function(err,decoded){
     if(err) {
       res.status(401).send(errorMessage() + "Token is not valid D:, go to the counter to exchange (joke)")
       return

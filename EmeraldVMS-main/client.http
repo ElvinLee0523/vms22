@@ -1,10 +1,10 @@
-GET http://localhost:3000/login 
+POST http://localhost:3000/login 
 Content-Type: application/json
 
-#{
+# {
 #    "user_id": "S2203",
 #    "password": "stellar"
-#}
+# }
 
 # {
 #    "user_id": "R2769",
@@ -19,16 +19,17 @@ Content-Type: application/json
 ###
 GET http://localhost:3000/finduser
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
-    "user_id": "R2769"
+    "user_id": "R5552"
 }
 
 ###
 POST http://localhost:3000/registeruser
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
+
 
 {
     "user_id": "R5552",
@@ -42,11 +43,12 @@ Authorization: Bearer
 ###
 PATCH http://localhost:3000/updateUser
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAzNTY2MTk4LCJleHAiOjE3MDM1Njk3OTh9.VLaTPhtwr_AvvNU_xGQGsgH5m1iSNf9_jEyzqgA3Qs8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
+
 
 {
     "user_id": "R5552",
-    "name": "boyiboyiii",
+    "name": "boyiboyiiiloveu",
     "password" : "sheela9103i",
     "unit": "T-7-5",
     "hp_num": "0173902719"
@@ -55,7 +57,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyN
 ###
 DELETE http://localhost:3000/deleteUser
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
     "user_id": "R5552"
@@ -64,7 +66,7 @@ Authorization: Bearer
 ###
 POST http://localhost:3000/registervisitor
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
     "ref" : "647112110",
@@ -81,7 +83,7 @@ Authorization: Bearer
 ###
 POST http://localhost:3000/checkIn
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
     "log_id": "3",
@@ -91,16 +93,16 @@ Authorization: Bearer
 ###
 PATCH http://localhost:3000/checkOut
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
-    "log_id": "1"
+    "log_id": "3"
 }
 
 ###
 GET http://localhost:3000/findvisitor
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
     "ref_num":"647112110"
@@ -109,7 +111,7 @@ Authorization: Bearer
 ###
 GET http://localhost:3000/createQRvisitor
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 { 
     "IC_num": "960417-07-0110"
@@ -118,7 +120,7 @@ Authorization: Bearer
 ###
 PATCH http://localhost:3000/updateVisitor
 Content-Type: application/json
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
     "ref_num": "615671031",
@@ -130,16 +132,16 @@ Authorization: Bearer
 ###
 DELETE http://localhost:3000/deleteVisitor
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTIzMjc2LCJleHAiOjE3MDQxMjY4NzZ9.c4sb1u3uep2sDlv3LzVIox65W14zriLrfy09z7NWYs0
 
 {
     "ref_num": "615671031"
 }
 
 ###
-GET http://localhost:3000/findvisitorlog
+POST http://localhost:3000/findvisitorlog
 Content-Type: application/json 
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg3M2EyNDhjMGZmYzc5NGQ4ZGMxNzEiLCJ1c2VyX2lkIjoiQTMxMDAiLCJwYXNzd29yZCI6IiQyYiQxMCRmM1I0LklYc2l4aFRtcnlXOGVVYzEuM1cxRDVpMWEzd2xtSlNnSHBQdDlRY3Z3aWVlYUR5RyIsIm5hbWUiOiJyb2NrZXQiLCJ1bml0IjoibWFuYWdlbWVudCIsImhwX251bSI6IjMxMjMyIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0MTI1MjM0LCJleHAiOjE3MDQxMjg4MzR9.-xfo2Tq-ifKN2QfccePU1aPQFwAs-ypWFMxl9110kEY
 
 {
     "log_id": "1"
