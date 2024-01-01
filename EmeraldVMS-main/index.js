@@ -83,7 +83,7 @@ app.post('/login', async (req, res) => {
       res.status(201).send(errorMessage() + result)
     }
   });
-
+//
 //find user GET request
 app.get('/finduser/:name', verifyToken, async (req, res)=>{
   let authorize = req.user.role //reading the token for authorisation
