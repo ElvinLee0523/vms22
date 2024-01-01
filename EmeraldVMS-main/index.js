@@ -187,7 +187,7 @@ app.patch('/updateuser', verifyToken, async (req, res)=>{
     }
 })
 
-
+///
 //delete user DELETE request
 app.delete('/deleteuser', verifyToken, async (req, res)=>{
   let data = req.body
