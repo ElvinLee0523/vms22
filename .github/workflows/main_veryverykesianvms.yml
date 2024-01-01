@@ -59,4 +59,4 @@ jobs:
           app-name: 'veryverykesianvms'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4630597AED8246FBBC250933FBB835CE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_608CF8A5E65D4809ADBB8C552FAD5A1E }}
